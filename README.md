@@ -1,88 +1,167 @@
-# MovieDiscovery
-Teach Stack:Angular+API
-🎥 MovieFlix: Ultimate Movie Discovery App
-![alt text](https://img.shields.io/badge/Angular-18+-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+🎥 MovieFlix – Ultimate Movie Discovery App
 
-![alt text](https://img.shields.io/badge/RxJS-Latest-B7178C?style=for-the-badge&logo=reactivex&logoColor=white)
 
-![alt text](https://img.shields.io/badge/Sass-Professional-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-![alt text](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
-MovieFlix is a high-performance, responsive movie discovery application built with Angular 18+. It leverages the OMDb API to provide users with real-time movie data, deep-dive details, and a personalized watchlist experience, all wrapped in a sleek, Netflix-inspired dark theme.
+
+
+
+
+
+MovieFlix is a high-performance, responsive movie discovery web application built using Angular 18+ and the OMDb API.
+It delivers real-time movie search, rich movie details, and a personalized watchlist — all wrapped in a sleek Netflix-inspired dark UI.
+
 🌟 Key Features
-🏠 Dynamic Home Page: Categorized movie rows (Action, Comedy, Drama, Thriller) with smooth horizontal scrolling.
-🔍 Real-time Global Search: Powerful search functionality with RxJS debouncing and switchMap to optimize API calls.
-📄 Deep Details View: Comprehensive movie information including IMDb ratings, full plot, cast, and director details.
-❤️ Personal Watchlist: State-managed "Add to Favorites" feature using Angular Signals and persistent LocalStorage.
-⏳ Optimized Loading: Custom-built loading spinners and lazy-loading transitions for a premium UX.
-📱 Mobile-First Design: Fully responsive UI that looks stunning on desktops, tablets, and smartphones.
-🛠️ Technical Implementation
-This project demonstrates proficiency in modern Angular concepts:
-Standalone Components: Architecture without NgModules for a lighter, faster application.
-State Management: Used Angular Signals (v18) for reactive, high-performance state handling.
-RxJS Operators: Implemented debounceTime, distinctUntilChanged, and switchMap for efficient search logic.
-API Integration: Centralized HTTP service with a Functional Interceptor to automatically attach API keys to requests.
-Custom Pipes & Directives:
-RuntimePipe: Formats minutes into Xh Ym format.
-HoverDirective: Adds smooth scaling effects to movie cards.
-Routing: Complex routing with parameters for movie details and query parameters for search results.
+🏠 Dynamic Home Page
+
+Category-based movie rows (Action, Comedy, Drama, Thriller)
+
+Smooth horizontal scrolling for a premium browsing experience
+
+🔍 Real-Time Movie Search
+
+Global search with RxJS debouncing
+
+Optimized API calls using debounceTime, distinctUntilChanged, and switchMap
+
+📄 Movie Details View
+
+IMDb ratings
+
+Full plot description
+
+Cast & director information
+
+Runtime and genre details
+
+❤️ Personal Watchlist
+
+Add / remove favorite movies
+
+State managed with Angular Signals
+
+Persistent storage using LocalStorage
+
+⏳ Performance Optimized
+
+Custom loading spinners
+
+Lazy loading for routes and components
+
+📱 Fully Responsive Design
+
+Mobile-first layout
+
+Optimized for desktop, tablet, and mobile devices
+
+🛠️ Technical Highlights
+
+Standalone Components (No NgModules)
+
+Angular Signals (v18) for reactive state management
+
+RxJS for efficient async data handling
+
+Centralized API Service
+
+Functional HTTP Interceptor for automatic API key injection
+
+Zoneless Angular Configuration
+
+Fetch API integration
+
+🧩 Custom Utilities
+🔧 Pipes
+
+RuntimePipe → Converts minutes into Xh Ym format
+
+🎨 Directives
+
+HoverDirective → Smooth scaling animation on movie cards
+
+🧭 Routing Strategy
+
+Parameterized routing for movie details
+
+Query-based routing for search results
+
+Lazy-loaded pages for better performance
+
 📂 Project Structure
-code
-Text
 src/app/
 ├── core/
-│   ├── interceptors/  # API Key injection logic
-│   ├── services/      # Movie & Favorite state logic
-│   └── models/        # TypeScript interfaces for API responses
+│   ├── interceptors/   # API key injection logic
+│   ├── services/       # Movie & favorites state management
+│   └── models/         # TypeScript interfaces
+│
 ├── shared/
-│   ├── components/    # Reusable Loader, MovieCard, SearchBar
-│   ├── pipes/         # Custom data formatting (RuntimePipe)
-│   └── directives/    # Custom UI behaviors
+│   ├── components/     # Loader, MovieCard, SearchBar
+│   ├── pipes/          # RuntimePipe
+│   └── directives/     # HoverDirective
+│
 ├── pages/
-│   ├── home/          # Featured categories
-│   ├── movie-details/ # Detailed movie information
-│   ├── search-results/# Grid view with pagination
-│   └── favorites/     # User watchlist
-└── app.config.ts      # Global providers (Zoneless, Fetch, Interceptors)
+│   ├── home/           # Category-based movie lists
+│   ├── movie-details/  # Detailed movie view
+│   ├── search-results/ # Search results with pagination
+│   └── favorites/      # User watchlist
+│
+└── app.config.ts       # Global providers & interceptors
+
 🚀 Getting Started
-Prerequisites
-Node.js (v18.x or higher)
-Angular CLI (v18.x or higher)
-Installation
+✅ Prerequisites
+
+Node.js v18+
+
+Angular CLI v18+
+
+📦 Installation
+
 Clone the repository:
-code
-Bash
-git clone https://github.com/your-username/movie-discovery-app.git
+
+git clone https://github.com/sonali131/movie-discovery-app.git
 cd movie-discovery-app
+
+
 Install dependencies:
-code
-Bash
+
 npm install
-Configure API Key:
-Create a file src/environments/environment.ts and add your OMDb API key:
-code
-TypeScript
+
+🔑 Configure API Key
+
+Create src/environments/environment.ts:
+
 export const environment = {
   production: false,
   apiKey: 'YOUR_OMDB_API_KEY',
   apiUrl: 'https://www.omdbapi.com/'
 };
-Run the application:
-code
-Bash
+
+▶️ Run the Application
 ng serve -o
+
+
+The app will open automatically at:
+👉 http://localhost:4200
+
 🎨 UI Preview
 Home Page	Movie Details	Search Results
-![alt text](https://via.placeholder.com/300x180?text=Netflix+Style+Home)
-![alt text](https://via.placeholder.com/300x180?text=Detailed+Info)
-![alt text](https://via.placeholder.com/300x180?text=Grid+Results)
-<img width="953" height="431" alt="image" src="https://github.com/user-attachments/assets/d0376741-d04c-49ae-8d12-19c252eaefe9" />
 
+	
+	
+<img width="953" height="431" alt="UI Preview" src="https://github.com/user-attachments/assets/d0376741-d04c-49ae-8d12-19c252eaefe9" />
 🛡️ API Information
-This app uses the OMDb API. You can get your free API key at omdbapi.com.
+
+This application uses the OMDb API.
+Get your free API key from:
+👉 https://www.omdbapi.com/
+
 👨‍💻 Author
-Your Name : Sonali Mishra
+
+Sonali Mishra
+
 GitHub: @sonali131
-LinkedIn: https://www.linkedin.com/in/sonali-mishra-4239aa250/
+
+LinkedIn: Sonali Mishra
+
 📝 License
-This project is MIT licensed.
+
+This project is licensed under the MIT License.
