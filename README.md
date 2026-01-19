@@ -1,9 +1,15 @@
 🎥 MovieFlix – Ultimate Movie Discovery App
 
 
+This README is designed to make your GitHub repository look professional, high-quality, and modern. It highlights your technical skills and the modern Angular features you used.
+🎥 MovieFlix: Ultimate Movie Discovery App
+![alt text](https://img.shields.io/badge/Angular-18+-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 
+![alt text](https://img.shields.io/badge/RxJS-Latest-B7178C?style=for-the-badge&logo=reactivex&logoColor=white)
 
+![alt text](https://img.shields.io/badge/Sass-Professional-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
+![alt text](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
 
 
