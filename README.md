@@ -217,9 +217,9 @@ Get your free API key from:
 
 Sonali Mishra
 
-GitHub: @sonali131
+GitHub: https://github.com/sonali131
 
-LinkedIn: Sonali Mishra
+LinkedIn: https://www.linkedin.com/in/sonali-mishra-4239aa250/
 
 📝 License
 
